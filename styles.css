@@ -15,8 +15,18 @@ body {
     font-size: 24px;
 }
 
-h2 {
-    color: #3046C5;
+.social {
+    font-size: 24px;
+    color: black;
+    padding: 5px;
+}
+.social:hover {
+    cursor: pointer;
+    color: blue;
+    opacity: 0.6;
+}
+.copyright {
+    font-size: 14px;
 }
 
 header h2 {
@@ -40,4 +50,13 @@ header h2 {
 }
 .navbar {
     background-color: #000;
+}
+
+@media screen and (max-width: 360px) {
+    .logo-title {
+        font-size: 60px;
+    }
+    .logo-description {
+        display: none;
+    }
 }
