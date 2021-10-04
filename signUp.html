@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gugi&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gugi&family=Open+Sans:wght@300&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="styles.css">
     <title>Home Page</title>
 </head>
+
 <body>
     <header class="jumbotron jumbotron-fluid">
         <div class="container">
@@ -39,11 +42,157 @@
             </div>
         </div>
     </nav>
+
+    <div class="container page-body">
+        <div class="row">
+            <!-- package 1 start -->
+            <div class="col-12 col-sm-4 text-center py-3">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#package1">
+                    Package 1
+                </button>
+
+                <div class="modal fade" id="package1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Package 1</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                ...
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- package 3 start -->
+            <div class="col-12 col-sm-4 text-center py-3">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#package2">
+                    package 2
+                </button>
+
+                <div class="modal fade" id="package2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Package 2</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                ...
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- package 3 start -->
+            <div class="col-12 col-sm-4 text-center py-3">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#package3">
+                    package 3
+                </button>
+
+                <div class="modal fade" id="package3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Package 3</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                ...
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- form start -->
+
+<div class="container">
+    <form class="py-5">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">Password</label>
+            <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputAddress">Address</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        </div>
+        <div class="form-group">
+          <label for="inputAddress2">Address 2</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputCity">City</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputState">State</label>
+            <select id="inputState" class="form-control">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputZip">Zip</label>
+            <input type="text" class="form-control" id="inputZip">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Check me out
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Sign in</button>
+      </form>
+      </div>
+
+
+
+
+
+
     <footer class="site-footer">
         <div class="container">
-            <div class="row">             
+            <div class="row">
                 <div class="col-12 col-md-6 text-center p-3">
-                	<h5>Social</h5>
+                    <h5>Social</h5>
                     <a href="http://instagram.com/"><i class="fab fa-instagram-square social"></i></a>
                     <a href="http://facebook.com/"><i class="fab fa-facebook-square social"></i></a>
                     <a href="http://twitter.com/"><i class="fab fa-twitter-square social"></i></a>
@@ -52,18 +201,19 @@
                 <div class="col-12 col-md-6 text-center p-3">
                     <p><i class="fas fa-phone"></i> <a href="tel:+18001234567">1 (800) 123-4567</a></p>
                     <p><i class="fas fa-envelope"></i> Fit4U@email.com</p>
-                </div>            
-           </div>
-           <div class="row text-center mb-0 pb-0 pt-3 copyright">
-               <div class="col-12">
-                   <p>&copy; Copyright 2021</p>
-               </div>
-           </div>
+                </div>
+            </div>
+            <div class="row text-center mb-0 pb-0 pt-3 copyright">
+                <div class="col-12">
+                    <p>&copy; Copyright 2021</p>
+                </div>
+            </div>
         </div>
-    </footer> 
+    </footer>
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/5e86a51f88.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
