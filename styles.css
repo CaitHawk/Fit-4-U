@@ -1,5 +1,5 @@
 body {
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Gruppo', cursive;
 }
 
 .logo-title {
@@ -7,8 +7,8 @@ body {
     font-size: 80px;
 }
 .logo-description {
-    font-family: "Open Sans", sans-serif;
-    font-size: 20px;
+    font-family: 'Gruppo', cursive;
+    font-size: 28px;
 }
 .nav-item {
     font-family: 'Bebas Neue', cursive;
@@ -57,6 +57,6 @@ header h2 {
         font-size: 60px;
     }
     .logo-description {
-        display: none;
+        font-size: 16px;
     }
 }
