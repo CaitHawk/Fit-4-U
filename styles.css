@@ -60,3 +60,24 @@ header h2 {
         font-size: 16px;
     }
 }
+.signUp {
+    color: black;
+}
+.tab-pane {
+    padding: 30px;
+    text-align: center;
+    border: solid 1px lightGray;
+    border-top: none;
+    border-radius: 3px;
+}
+.thick {
+    font-weight: 600;
+}
+.tab-header {
+    color: black;
+}
+.tab-header:hover {
+    cursor: pointer;
+    color: black;
+    opacity: 0.6;
+}

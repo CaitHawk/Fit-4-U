@@ -15,7 +15,7 @@
     <title>Home Page</title>
 </head>
 
-<body>
+<body class="signUp">
     <header class="jumbotron jumbotron-fluid">
         <div class="container">
             <div class="row">
@@ -28,10 +28,10 @@
     </header>
     <nav class="navbar navbar-expand-md navbar-dark sticky-top">
         <div class="container">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#fitUNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="nucampNavbar">
+            <div class="collapse navbar-collapse" id="fitUNavbar">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item px-3"><a class="nav-link" href="#">Home</a></li>
                     <li class="nav-item px-3"><a class="nav-link" href="about.html">About</a></li>
@@ -44,87 +44,40 @@
     </nav>
 
     <div class="container page-body">
-        <div class="row">
-            <!-- package 1 start -->
-            <div class="col-12 col-sm-4 text-center py-3">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#package1">
-                    Package 1
-                </button>
-
-                <div class="modal fade" id="package1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Package 1</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                ...
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
-                            </div>
-                        </div>
+        <!-- package 1 start -->
+        <div class="row row-content pb-3">
+            <div class="col">
+                <ul class="nav nav-tabs nav-fill">
+                    <li class="nav-item">
+                        <a class="nav-link active tab-header" href="#bootstrap" role="tab" data-toggle="tab">Premium Package</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link tab-header" href="#git" role="tab" data-toggle="tab">Family Package</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link tab-header" href="#mongo" role="tab" data-toggle="tab">Basic Package</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane fade show active" id="bootstrap">
+                        <h4>Bootstrap Outfitters <small>Outdoor Gear Specialists</small></h4>
+                        <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with the gear you need at prices
+                            you can't beat.</p>
                     </div>
-                </div>
-            </div>
-
-            <!-- package 3 start -->
-            <div class="col-12 col-sm-4 text-center py-3">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#package2">
-                    package 2
-                </button>
-
-                <div class="modal fade" id="package2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Package 2</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                ...
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
-                            </div>
-                        </div>
+                    <div role="tabpanel" class="tab-pane fade" id="git">
+                        <h4>Git Out Expeditions <small>Group Adventure Expeditions</small></h4>
+                        <p class="d-none d-sm-block">Join Git Out Expeditions to explore new horizons with a group of
+                            other adventurers!</p>
                     </div>
-                </div>
-            </div>
-
-            <!-- package 3 start -->
-            <div class="col-12 col-sm-4 text-center py-3">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#package3">
-                    package 3
-                </button>
-
-                <div class="modal fade" id="package3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Package 3</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                ...
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
-                            </div>
-                        </div>
+                    <div role="tabpanel" class="tab-pane fade" id="mongo">
+                        <h4>Mongo Fly Shop <small>Your Neighborhood Fly Fishing Shop.</small></h4>
+                        <p class="d-none d-sm-block">Need a new fishing pole, a tacklebox, or flies of all kinds? Stop
+                            by Mongo Fly Shop.</p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="node">
+                        <h4>Node Outdoor Apparel <small>Outdoor Clothes & Shoes</small></h4>
+                        <p class="d-none d-sm-block">From polar fleeces to swimsuits, hiking boots to waders, a visit to
+                            Node will be sure to get you covered.</p>
                     </div>
                 </div>
             </div>
@@ -132,56 +85,56 @@
     </div>
 
 
-<!-- form start -->
+    <!-- form start -->
 
-<div class="container">
-    <form class="py-5">
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="inputEmail4">Email</label>
-            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-          </div>
-          <div class="form-group col-md-6">
-            <label for="inputPassword4">Password</label>
-            <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="inputAddress">Address</label>
-          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-        </div>
-        <div class="form-group">
-          <label for="inputAddress2">Address 2</label>
-          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-        </div>
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="inputCity">City</label>
-            <input type="text" class="form-control" id="inputCity">
-          </div>
-          <div class="form-group col-md-4">
-            <label for="inputState">State</label>
-            <select id="inputState" class="form-control">
-              <option selected>Choose...</option>
-              <option>...</option>
-            </select>
-          </div>
-          <div class="form-group col-md-2">
-            <label for="inputZip">Zip</label>
-            <input type="text" class="form-control" id="inputZip">
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck">
-            <label class="form-check-label" for="gridCheck">
-              Check me out
-            </label>
-          </div>
-        </div>
-        <button type="submit" class="btn btn-primary">Sign in</button>
-      </form>
-      </div>
+    <div class="container thick">
+        <form class="py-5">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPassword4">Password</label>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputAddress">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="form-group">
+                <label for="inputAddress2">Address 2</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputCity">City</label>
+                    <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputState">State</label>
+                    <select id="inputState" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>...</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="inputZip">Zip</label>
+                    <input type="text" class="form-control" id="inputZip">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Check me out
+                    </label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Sign in</button>
+        </form>
+    </div>
 
 
 
