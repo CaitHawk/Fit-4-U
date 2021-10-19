@@ -88,3 +88,7 @@ header h2 {
 .small-text {
     font-size: 12px;
 }
+.block-font {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 24px;
+}
