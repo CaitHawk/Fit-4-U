@@ -92,14 +92,41 @@ header h2 {
     font-family: 'Bebas Neue', cursive;
     font-size: 24px;
 }
+
+.thumbnail {
+    width: 250px;
+    border: solid gray 2px;
+}
+
 @media screen and (max-width: 750px) {
     #lgTable {
         display: none;
+    }
+    .thumbnail {
+        width: 100px;
     }
 
 }
 @media screen and (min-width: 751px) {
     #smTable {
+        display: none;
+    }
+
+}
+@media screen and (max-width: 515px) {
+    #about-div-lg {
+        display: none;
+    }
+    #about-div-sm {
+        margin: auto;
+    }
+
+}
+@media screen and (min-width: 516px) {
+    #about-div-lg {
+        margin: 20px;
+    }
+    #about-div-sm {
         display: none;
     }
 
